@@ -1,6 +1,6 @@
-package dev.hybridlabs.weaponry.config;
+package dev.hybridlabs.tugkan_weaponry.config;
 
-import dev.hybridlabs.weaponry.Main;
+import dev.hybridlabs.tugkan_weaponry.Main;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.common.ForgeConfigSpec;
