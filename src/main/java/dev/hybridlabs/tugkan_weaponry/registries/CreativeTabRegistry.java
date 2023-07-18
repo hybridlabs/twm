@@ -15,8 +15,8 @@ import static dev.hybridlabs.tugkan_weaponry.registries.ItemRegistry.*;
 public class CreativeTabRegistry {
   public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
-  public static final RegistryObject<CreativeModeTab> WEAPONRY_TAB = CREATIVE_MODE_TABS.register("weaponry", () -> CreativeModeTab.builder()
-    .title(Component.translatable("hybrid_weaponry.itemgroup.hybridweaponry"))
+  public static final RegistryObject<CreativeModeTab> WEAPONRY_TAB = CREATIVE_MODE_TABS.register("weapons", () -> CreativeModeTab.builder()
+    .title(Component.translatable("tugkans_weaponry.itemgroup.weapons"))
     .icon(() -> BRIGHTSTEEL_SWORD.get().getDefaultInstance())
     .displayItems((parameters, output) -> {
       output.accept(COPPER_SWORD.get());
@@ -43,6 +43,23 @@ public class CreativeTabRegistry {
       output.accept(AURUM_AXE.get());
       output.accept(DIAMOND_KNIFE.get());
       output.accept(NETHERITE_KNIFE.get());
+      output.accept(GILDED_NETHERITE_KNIFE.get());
+      output.accept(BRIGHTSTEEL_KNIFE.get());
+      output.accept(BRIGHTSTEEL_BOOTS.get());
+      output.accept(BRIGHTSTEEL_LEGGINGS.get());
+      output.accept(BRIGHTSTEEL_CHESTPLATE.get());
+      output.accept(BRIGHTSTEEL_HELMET.get());
+      output.accept(WOODEN_CLUB.get());
+      output.accept(WOODEN_MACE.get());
+      output.accept(COPPER_MACE.get());
+      output.accept(IRON_MACE.get());
+      output.accept(STEEL_MACE.get());
+      output.accept(WOODEN_HAMMER.get());
+      output.accept(STEEL_HAMMER.get());
+      output.accept(TERRAPOTTA_FIST.get());
+      output.accept(GAUNTILUS_FIST.get());
+      output.accept(FIST_OF_THE_SEA_FIST.get());
+      output.accept(SHULKER_GAUNTLET_FIST.get());
     }).build());
 
   public static void init(IEventBus modEventBus) {
