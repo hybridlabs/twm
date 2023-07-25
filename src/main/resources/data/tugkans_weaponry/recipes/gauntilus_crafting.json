@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0#0",
+    "0 0"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:kelp"
+    },
+    "#": {
+      "item": "minecraft:nautilus_shell"
+    }
+  },
+  "result": {
+    "item": "tugkans_weaponry:gauntilus_fist",
+    "count": 1
+  }
+}

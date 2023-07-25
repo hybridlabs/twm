@@ -1,0 +1,75 @@
+{
+  "soul_hit": {
+    "sounds": [
+      {
+        "name": "tugkans_weaponry:soul_hit",
+        "stream": false
+      }
+    ]
+  },
+  "soul_attack": {
+    "sounds": [
+      {
+        "name": "tugkans_weaponry:breathe0",
+        "stream": false
+      },
+      {
+        "name": "tugkans_weaponry:breathe1",
+        "stream": false
+      },
+      {
+        "name": "tugkans_weaponry:breathe2",
+        "stream": false
+      }
+    ]
+  },
+  "soul_death": {
+    "sounds": [
+      {
+        "name": "tugkans_weaponry:death",
+        "stream": false
+      }
+    ]
+  },
+  "katana_sheathe": {
+    "subtitle": "subtitles.katana_sheathe",
+    "sounds": [
+      {
+        "name": "tugkans_weaponry:katana_sheathe",
+        "stream": false
+      }
+    ]
+  },
+  "the_bloodthirster": {
+    "sounds": [
+      {
+        "name": "tugkans_weaponry:the_bloodthirster1",
+        "stream": false
+      },
+      {
+        "name": "tugkans_weaponry:the_bloodthirster2",
+        "stream": false
+      },
+      {
+        "name": "tugkans_weaponry:the_bloodthirster3",
+        "stream": false
+      }
+    ]
+  },
+  "the_bloodthirster_deep": {
+    "sounds": [
+      {
+        "name": "tugkans_weaponry:the_bloodthirster_deep1",
+        "stream": false
+      },
+      {
+        "name": "tugkans_weaponry:the_bloodthirster_deep2",
+        "stream": false
+      },
+      {
+        "name": "tugkans_weaponry:the_bloodthirster_deep3",
+        "stream": false
+      }
+    ]
+  }
+}

@@ -21,8 +21,8 @@ import static dev.hybridlabs.tugkan_weaponry.Main.MODID;
 public class ItemRegistry {
   public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
   
-  public static final RegistryObject<Item> AURUMITE_INGOT = ITEMS.register("aurimite_ingot", () -> new Item(new Item.Properties()));
-  public static final RegistryObject<Item> AURUMITE_SCRAP = ITEMS.register("aurimite_scrap", () -> new Item(new Item.Properties()));
+  public static final RegistryObject<Item> AURUMITE_INGOT = ITEMS.register("aurumite_ingot", () -> new Item(new Item.Properties()));
+  public static final RegistryObject<Item> AURUMITE_SCRAP = ITEMS.register("aurumite_scrap", () -> new Item(new Item.Properties()));
   public static final RegistryObject<Item> BEDROCK_SAMPLE = ITEMS.register("bedrock_sample", () -> new Item(new Item.Properties()));
   public static final RegistryObject<Item> BRIGHTSTEEL_INGOT = ITEMS.register("brightsteel_ingot", () -> new Item(new Item.Properties()));
   public static final RegistryObject<Item> OBSIDIAN_SHARD = ITEMS.register("obsidian_shard", () -> new Item(new Item.Properties()));
@@ -31,6 +31,19 @@ public class ItemRegistry {
   public static final RegistryObject<Item> TITANITE_INGOT = ITEMS.register("titanite_ingot", () -> new Item(new Item.Properties()));
   public static final RegistryObject<Item> TITANITE_SCRAP = ITEMS.register("titanite_scrap", () -> new Item(new Item.Properties()));
 
+  public static final RegistryObject<Item> BEDROCK = ITEMS.register("bedrock", () -> new BlockItem(BlockRegistry.BEDROCK.get(), new Item.Properties()));
+  public static final RegistryObject<Item> BEDROCK_BRICKS = ITEMS.register("bedrock_bricks", () -> new BlockItem(BlockRegistry.BEDROCK_BRICKS.get(), new Item.Properties()));
+  public static final RegistryObject<Item> BEDROCK_BRICKS_UNBREAKABLE = ITEMS.register("bedrock_bricks_unbreakable", () -> new BlockItem(BlockRegistry.BEDROCK_BRICKS_UNBREAKABLE.get(), new Item.Properties()));
+  
+  public static final RegistryObject<Item> ANCIENT_DEBRIS = ITEMS.register("ancient_debris", () -> new BlockItem(BlockRegistry.ANCIENT_DEBRIS.get(), new Item.Properties()));
+  public static final RegistryObject<Item> ANCIENT_DEBRIS_DEEPSLATE = ITEMS.register("ancient_debris_deepslate", () -> new BlockItem(BlockRegistry.ANCIENT_DEBRIS_DEEPSLATE.get(), new Item.Properties()));
+  public static final RegistryObject<Item> GOLD_ANCIENT_DEBRIS = ITEMS.register("gold_ancient_debris", () -> new BlockItem(BlockRegistry.GOLD_ANCIENT_DEBRIS.get(), new Item.Properties()));
+  public static final RegistryObject<Item> GOLD_ANCIENT_DEBRIS_NETHERRACK = ITEMS.register("gold_ancient_debris_netherrack", () -> new BlockItem(BlockRegistry.GOLD_ANCIENT_DEBRIS_NETHERRACK.get(), new Item.Properties()));
+  
+  public static final RegistryObject<Item> STEEL_BLOCK = ITEMS.register("steel_block", () -> new BlockItem(BlockRegistry.STEEL_BLOCK.get(), new Item.Properties()));
+  public static final RegistryObject<Item> BRIGHTSTEEL_BLOCK = ITEMS.register("brightsteel_block", () -> new BlockItem(BlockRegistry.BRIGHTSTEEL_BLOCK.get(), new Item.Properties()));
+  public static final RegistryObject<Item> AURUMITE_BLOCK = ITEMS.register("aurumite_block", () -> new BlockItem(BlockRegistry.AURUMITE_BLOCK.get(), new Item.Properties()));
+  
   public static final RegistryObject<Item> WOODEN_CLUB = ITEMS.register("wooden_club_mace", () -> new MaceItem(Tiers.WOOD, 5.0F, -2.8F, new Item.Properties().defaultDurability(100)));
   public static final RegistryObject<Item> WOODEN_MACE = ITEMS.register("wooden_mace", () -> new MaceItem(Tiers.WOOD, 7.0F, -2.8F, new Item.Properties().defaultDurability(200)));
   public static final RegistryObject<Item> COPPER_MACE = ITEMS.register("copper_mace", () -> new MaceItem(WeaponryToolTiers.COPPER, 6.0F, -2.8F, new Item.Properties().defaultDurability(500)));

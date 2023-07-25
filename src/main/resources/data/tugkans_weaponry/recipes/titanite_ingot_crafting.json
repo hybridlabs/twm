@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "tugkans_weaponry:titanite_scrap"
+    },
+    {
+      "item": "tugkans_weaponry:titanite_scrap"
+    },
+    {
+      "item": "tugkans_weaponry:titanite_scrap"
+    },
+    {
+      "item": "tugkans_weaponry:titanite_scrap"
+    },
+    {
+      "item": "tugkans_weaponry:bedrock_sample"
+    },
+    {
+      "item": "tugkans_weaponry:bedrock_sample"
+    },
+    {
+      "item": "tugkans_weaponry:bedrock_sample"
+    },
+    {
+      "item": "tugkans_weaponry:bedrock_sample"
+    }
+  ],
+  "result": {
+    "item": "tugkans_weaponry:titanite_ingot",
+    "count": 1
+  }
+}

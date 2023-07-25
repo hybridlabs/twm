@@ -9,6 +9,7 @@ public class Registry {
     IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
     ItemRegistry.init(modEventBus);
+    BlockRegistry.init(modEventBus);
     CreativeTabRegistry.init(modEventBus);
     WeaponryToolTiers.init();
     EnchantmentRegistry.init(modEventBus);

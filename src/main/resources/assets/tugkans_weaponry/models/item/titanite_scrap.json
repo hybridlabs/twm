@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tugkans_weaponry:item/titanite_scrap"
+  }
+}

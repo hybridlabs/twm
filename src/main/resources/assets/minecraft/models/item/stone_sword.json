@@ -1,10 +1,9 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "stone_sword",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "stone_sword",
-		"particle": "stone_sword"
+		"0": "tugkans_weaponry:item/stone_sword",
+		"particle": "tugkans_weaponry:item/stone_sword"
 	},
 	"elements": [
 		{

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "tugkans_weaponry:brightsteel_knife",
+    "tugkans_weaponry:netherite_knife",
+    "tugkans_weaponry:diamond_knife",
+    "tugkans_weaponry:gilded_netherite_knife"
+  ]
+}

@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "stone_axe",
-		"particle": "stone_axe"
+		"0": "tugkans_weaponry:item/stone_axe",
+		"particle": "tugkans_weaponry:item/stone_axe"
 	},
 	"elements": [
 		{

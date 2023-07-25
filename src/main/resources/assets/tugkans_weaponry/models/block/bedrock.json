@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "tugkans_weaponry:block/bedrock_top",
+    "side": "tugkans_weaponry:block/bedrock_side"
+  }
+}

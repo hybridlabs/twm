@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "minecraft:netherite_axe"
+  },
+  "addition": {
+    "tag": "forge:ingots/gold"
+  },
+  "result": {
+    "item": "tugkans_weaponry:gilded_netherite_axe"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}

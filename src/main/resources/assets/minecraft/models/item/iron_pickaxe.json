@@ -1,9 +1,8 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "iron_pickaxe",
 	"textures": {
-		"0": "iron_pickaxe",
-		"particle": "iron_pickaxe"
+		"0": "tugkans_weaponry:item/iron_pickaxe",
+		"particle": "tugkans_weaponry:item/iron_pickaxe"
 	},
 	"elements": [
 		{

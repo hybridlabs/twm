@@ -1,6 +1,6 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "iron_sword",
+	"parent": "item/iron_sword",
 	"texture_size": [32, 32],
 	"textures": {
 		"0": "tugkans_weaponry:item/breaker_blade_claymore",

@@ -1,10 +1,9 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "netherite_pickaxe",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "netherite_pickaxe",
-		"particle": "netherite_pickaxe"
+		"0": "tugkans_weaponry:item/netherite_pickaxe",
+		"particle": "tugkans_weaponry:item/netherite_pickaxe"
 	},
 	"elements": [
 		{

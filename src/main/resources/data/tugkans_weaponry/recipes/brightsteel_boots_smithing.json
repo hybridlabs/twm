@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "minecraft:netherite_boots"
+  },
+  "addition": {
+    "item": "tugkans_weaponry:brightsteel_ingot"
+  },
+  "result": {
+    "item": "tugkans_weaponry:brightsteel_boots"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}

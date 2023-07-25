@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "212",
+    "212",
+    " # "
+  ],
+  "key": {
+    "2": {
+      "item": "tugkans_weaponry:obsidian_shard"
+    },
+    "1": {
+      "tag": "minecraft:logs"
+    },
+    "#": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "tugkans_weaponry:machuahuitl_claymore",
+    "count": 1
+  }
+}

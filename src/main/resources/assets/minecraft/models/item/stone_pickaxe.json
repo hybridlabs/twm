@@ -1,10 +1,9 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "stone_pickaxe",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "stone_pickaxe",
-		"particle": "stone_pickaxe"
+		"0": "tugkans_weaponry:item/stone_pickaxe",
+		"particle": "tugkans_weaponry:item/stone_pickaxe"
 	},
 	"elements": [
 		{

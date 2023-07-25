@@ -1,10 +1,9 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "debug_stick",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "debug_stick",
-		"particle": "debug_stick"
+		"0": "tugkans_weaponry:item/debug_stick",
+		"particle": "tugkans_weaponry:item/debug_stick"
 	},
 	"elements": [
 		{

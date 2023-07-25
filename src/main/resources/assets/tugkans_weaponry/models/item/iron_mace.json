@@ -1,6 +1,6 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "iron_sword",
+	"parent": "item/iron_sword",
 	"texture_size": [64, 64],
 	"textures": {
 		"0": "tugkans_weaponry:item/iron_mace"

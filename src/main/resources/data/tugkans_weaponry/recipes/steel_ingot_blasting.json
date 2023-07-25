@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 0,
+  "cookingtime": 800,
+  "ingredient": {
+    "item": "minecraft:iron_ingot"
+  },
+  "result": "tugkans_weaponry:steel_ingot"
+}

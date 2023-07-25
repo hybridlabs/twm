@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "0",
+    "#"
+  ],
+  "key": {
+    "0": {
+      "tag": "minecraft:logs"
+    },
+    "#": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "tugkans_weaponry:wooden_club_mace",
+    "count": 1
+  }
+}

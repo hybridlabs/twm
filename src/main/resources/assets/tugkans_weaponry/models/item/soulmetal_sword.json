@@ -1,6 +1,5 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "soulmetal_sword",
 	"texture_size": [32, 32],
 	"textures": {
 		"0": "tugkans_weaponry:item/soulmetal_sword",

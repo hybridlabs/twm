@@ -1,10 +1,9 @@
 {
 	"credit": "Made with Blockbench",
-	"parent": "iron_sword",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "iron_sword",
-		"particle": "iron_sword"
+		"0": "tugkans_weaponry:item/iron_sword",
+		"particle": "tugkans_weaponry:item/iron_sword"
 	},
 	"elements": [
 		{

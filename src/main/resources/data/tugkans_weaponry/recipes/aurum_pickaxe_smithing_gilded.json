@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "tugkans_weaponry:gilded_netherite_pickaxe"
+  },
+  "addition": {
+    "item": "tugkans_weaponry:aurumite_ingot"
+  },
+  "result": {
+    "item": "tugkans_weaponry:aurum_pickaxe"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}
