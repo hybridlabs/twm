@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "tugkans_weaponry:blocks/aurumite_block"
+    "all": "tugkans_weaponry:block/aurumite_block"
   }
 }
