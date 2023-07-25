@@ -1,6 +1,6 @@
-package dev.hybridlabs.tugkan_weaponry.items;
+package dev.hybridlabs.tugkan_weaponry.items.tiers;
 
-import net.minecraft.resources.ResourceLocation;
+import dev.hybridlabs.tugkan_weaponry.registries.ItemRegistry;
 import net.minecraft.tags.TagKey;
 import net.minecraft.util.LazyLoadedValue;
 import net.minecraft.world.item.Items;
@@ -8,20 +8,20 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.Tiers;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.common.TierSortingRegistry;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.List;
 import java.util.function.Supplier;
 
-import static dev.hybridlabs.tugkan_weaponry.Main.MODID;
+import static dev.hybridlabs.tugkan_weaponry.items.RegisterTierUtils.registerTier;
 import static dev.hybridlabs.tugkan_weaponry.registries.TagRegistry.NEEDS_FIST;
 
-public enum WeaponryFistTiers implements Tier {
-  TERRAPOTTA(250, 4.0F, 0.0F, 0, 10, () -> Ingredient.EMPTY),
-  NAUTILUS(1000, 4.0F, 0.0F, 0, 22, () -> Ingredient.of(Items.NAUTILUS_SHELL)),
-  HEART_OF_THE_SEA(2000, 4.0F, 0.0F, 0, 22, () -> Ingredient.of(Items.HEART_OF_THE_SEA)),
-  SHULKER(2031, 4.0F, 1.0F, 0, 10, () -> Ingredient.of(Items.SHULKER_SHELL));
+public enum WeaponrySwordTiers implements Tier {
+  GLASS(0, 4f, 1f, 1, 22, () -> Ingredient.EMPTY),
+  MACHUAHUITL(400, 4f, 6f, 1, 2, () -> Ingredient.of(ItemRegistry.OBSIDIAN_SHARD.get())),
+  SOULMETAL(1000, 4.0F, 3.0F, 1, 2, () -> Ingredient.EMPTY),
+  KATANA(2031, 4f, 2f, 1, 15, () -> Ingredient.EMPTY),
+  BLOODTHIRSTER(3084, 4f, 6f, 1, 15, () -> Ingredient.of(Items.NETHERITE_INGOT)),
+  BREAKER(4096, 4f, 16f, 4, 15, () -> Ingredient.of(Items.NETHERITE_INGOT));
   
   private final int level;
   private final int uses;
@@ -30,7 +30,7 @@ public enum WeaponryFistTiers implements Tier {
   private final int enchantmentValue;
   private final LazyLoadedValue<Ingredient> repairIngredient;
   
-  WeaponryFistTiers(int durability, float speed, float damage, int levelTier, int enchantmentValue, Supplier<Ingredient> repairIngredient) {
+  WeaponrySwordTiers(int durability, float speed, float damage, int levelTier, int enchantmentValue, Supplier<Ingredient> repairIngredient) {
     this.uses = durability;
     this.level = levelTier;
     this.speed = speed;
@@ -69,14 +69,11 @@ public enum WeaponryFistTiers implements Tier {
   
   //Tier registry
   public static void init() {
-    registerTier(WeaponryFistTiers.TERRAPOTTA, "terrapotta", Tiers.STONE, Tiers.IRON);
-  }
-  
-  public static void registerTier(Tier tier, String name, Tier after) {
-    TierSortingRegistry.registerTier(tier, new ResourceLocation(MODID, name), List.of(after), List.of());
-  }
-  
-  public static void registerTier(Tier tier, String name, Tier after, Tier before) {
-    TierSortingRegistry.registerTier(tier, new ResourceLocation(MODID, name), List.of(after), List.of(before));
+    registerTier(GLASS, "glass", Tiers.STONE);
+    registerTier(MACHUAHUITL, "machuahutil", GLASS);
+    registerTier(SOULMETAL, "soulmetal", MACHUAHUITL);
+    registerTier(KATANA, "katana", SOULMETAL);
+    registerTier(BLOODTHIRSTER, "bloodthirster", KATANA);
+    registerTier(BREAKER, "breaker", Tiers.DIAMOND);
   }
 }

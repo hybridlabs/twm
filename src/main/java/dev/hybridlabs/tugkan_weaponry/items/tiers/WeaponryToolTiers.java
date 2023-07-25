@@ -1,8 +1,7 @@
-package dev.hybridlabs.tugkan_weaponry.items;
+package dev.hybridlabs.tugkan_weaponry.items.tiers;
 
 import dev.hybridlabs.tugkan_weaponry.registries.ItemRegistry;
 import dev.hybridlabs.tugkan_weaponry.registries.TagRegistry;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.util.LazyLoadedValue;
 import net.minecraft.world.item.Items;
@@ -10,14 +9,12 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.Tiers;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.common.TierSortingRegistry;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.List;
 import java.util.function.Supplier;
 
-import static dev.hybridlabs.tugkan_weaponry.Main.MODID;
+import static dev.hybridlabs.tugkan_weaponry.items.RegisterTierUtils.registerTier;
 
 public enum WeaponryToolTiers implements Tier {
   COPPER(250, 4.0F, 1.0F, 1, 5, () -> Ingredient.of(Items.COPPER_INGOT)),
@@ -73,19 +70,11 @@ public enum WeaponryToolTiers implements Tier {
 
   //Tier registry
   public static void init() {
-    registerTier(WeaponryToolTiers.COPPER, "copper", Tiers.STONE, Tiers.IRON);
-    registerTier(WeaponryToolTiers.STEEL, "steel", Tiers.IRON, Tiers.DIAMOND);
-    registerTier(WeaponryToolTiers.OBSIDIAN_EDGED_DIAMOND, "obsidian_edged_diamond", Tiers.DIAMOND, Tiers.NETHERITE);
-    registerTier(WeaponryToolTiers.GILDED_NETHERITE, "gilded_netherite", Tiers.NETHERITE);
-    registerTier(WeaponryToolTiers.BRIGHTSTEEL, "brightsteel", WeaponryToolTiers.GILDED_NETHERITE);
-    registerTier(WeaponryToolTiers.AURUM, "aurum", WeaponryToolTiers.BRIGHTSTEEL);
-  }
-
-  public static void registerTier(Tier tier, String name, Tier after) {
-    TierSortingRegistry.registerTier(tier, new ResourceLocation(MODID, name), List.of(after), List.of());
-  }
-
-  public static void registerTier(Tier tier, String name, Tier after, Tier before) {
-    TierSortingRegistry.registerTier(tier, new ResourceLocation(MODID, name), List.of(after), List.of(before));
+    registerTier(COPPER, "copper", Tiers.STONE);
+    registerTier(STEEL, "steel", Tiers.IRON);
+    registerTier(OBSIDIAN_EDGED_DIAMOND, "obsidian_edged_diamond", Tiers.DIAMOND);
+    registerTier(GILDED_NETHERITE, "gilded_netherite", Tiers.NETHERITE);
+    registerTier(BRIGHTSTEEL, "brightsteel", GILDED_NETHERITE);
+    registerTier(AURUM, "aurum", BRIGHTSTEEL);
   }
 }

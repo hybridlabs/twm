@@ -1,4 +1,4 @@
-package dev.hybridlabs.tugkan_weaponry.items;
+package dev.hybridlabs.tugkan_weaponry.items.tiers;
 
 import dev.hybridlabs.tugkan_weaponry.registries.ItemRegistry;
 import net.minecraft.Util;

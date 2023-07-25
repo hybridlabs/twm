@@ -1,6 +1,6 @@
 package dev.hybridlabs.tugkan_weaponry.registries;
 
-import dev.hybridlabs.tugkan_weaponry.items.WeaponryToolTiers;
+import dev.hybridlabs.tugkan_weaponry.items.tiers.WeaponryToolTiers;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
@@ -17,6 +17,8 @@ public class TagRegistry {
   public static final TagKey<Block> NEEDS_AURUM_TOOL = create(new ResourceLocation(MODID, "needs_aurum_tool"));
   public static final TagKey<Block> NEEDS_BRIGHTSTEEL_TOOL = create(new ResourceLocation(MODID, "needs_brightsteel_tool"));
   public static final TagKey<Block> NEEDS_FIST = create(new ResourceLocation(MODID, "needs_fist"));
+  
+  public static final TagKey<Block> FIST_OF_THE_SEA_POWER = create(new ResourceLocation(MODID, "fist_of_the_sea_power"));
   
   public static TagKey<Block> getTagFromTier(WeaponryToolTiers tier) {
     return switch(tier) {

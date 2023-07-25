@@ -1,12 +1,15 @@
 package dev.hybridlabs.tugkan_weaponry.registries;
 
-import dev.hybridlabs.tugkan_weaponry.items.WeaponryFistTiers;
+import dev.hybridlabs.tugkan_weaponry.items.tiers.WeaponryFistTiers;
 import dev.hybridlabs.tugkan_weaponry.items.armor.BrightsteelArmor;
-import dev.hybridlabs.tugkan_weaponry.items.weapons.FistItem;
-import dev.hybridlabs.tugkan_weaponry.items.weapons.HammerItem;
-import dev.hybridlabs.tugkan_weaponry.items.weapons.KnifeItem;
-import dev.hybridlabs.tugkan_weaponry.items.WeaponryToolTiers;
-import dev.hybridlabs.tugkan_weaponry.items.weapons.MaceItem;
+import dev.hybridlabs.tugkan_weaponry.items.tiers.WeaponrySwordTiers;
+import dev.hybridlabs.tugkan_weaponry.items.weapons.*;
+import dev.hybridlabs.tugkan_weaponry.items.tiers.WeaponryToolTiers;
+import dev.hybridlabs.tugkan_weaponry.items.weapons.fists.FistOfTheSeaItem;
+import dev.hybridlabs.tugkan_weaponry.items.weapons.fists.GauntilusFistItem;
+import dev.hybridlabs.tugkan_weaponry.items.weapons.fists.ShulkerGauntletFistItem;
+import dev.hybridlabs.tugkan_weaponry.items.weapons.fists.TerrapottaFistItem;
+import dev.hybridlabs.tugkan_weaponry.items.weapons.swords.*;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -17,6 +20,7 @@ import static dev.hybridlabs.tugkan_weaponry.Main.MODID;
 
 public class ItemRegistry {
   public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
+  
   public static final RegistryObject<Item> AURUMITE_INGOT = ITEMS.register("aurimite_ingot", () -> new Item(new Item.Properties()));
   public static final RegistryObject<Item> AURUMITE_SCRAP = ITEMS.register("aurimite_scrap", () -> new Item(new Item.Properties()));
   public static final RegistryObject<Item> BEDROCK_SAMPLE = ITEMS.register("bedrock_sample", () -> new Item(new Item.Properties()));
@@ -27,19 +31,26 @@ public class ItemRegistry {
   public static final RegistryObject<Item> TITANITE_INGOT = ITEMS.register("titanite_ingot", () -> new Item(new Item.Properties()));
   public static final RegistryObject<Item> TITANITE_SCRAP = ITEMS.register("titanite_scrap", () -> new Item(new Item.Properties()));
 
-  public static final RegistryObject<Item> WOODEN_CLUB = ITEMS.register("wooden_club_mace", () -> new MaceItem(Tiers.WOOD, 5, -2.8F, new Item.Properties().defaultDurability(100)));
-  public static final RegistryObject<Item> WOODEN_MACE = ITEMS.register("wooden_mace", () -> new MaceItem(Tiers.WOOD, 7, -2.8F, new Item.Properties().defaultDurability(200)));
-  public static final RegistryObject<Item> COPPER_MACE = ITEMS.register("copper_mace", () -> new MaceItem(WeaponryToolTiers.COPPER, 6, -2.8F, new Item.Properties().defaultDurability(500)));
-  public static final RegistryObject<Item> IRON_MACE = ITEMS.register("iron_mace", () -> new MaceItem(Tiers.IRON, 5, -2.8F, new Item.Properties().defaultDurability(500)));
-  public static final RegistryObject<Item> STEEL_MACE = ITEMS.register("steel_mace", () -> new MaceItem(WeaponryToolTiers.STEEL, 7, -2.8F, new Item.Properties().defaultDurability(2000)));
+  public static final RegistryObject<Item> WOODEN_CLUB = ITEMS.register("wooden_club_mace", () -> new MaceItem(Tiers.WOOD, 5.0F, -2.8F, new Item.Properties().defaultDurability(100)));
+  public static final RegistryObject<Item> WOODEN_MACE = ITEMS.register("wooden_mace", () -> new MaceItem(Tiers.WOOD, 7.0F, -2.8F, new Item.Properties().defaultDurability(200)));
+  public static final RegistryObject<Item> COPPER_MACE = ITEMS.register("copper_mace", () -> new MaceItem(WeaponryToolTiers.COPPER, 6.0F, -2.8F, new Item.Properties().defaultDurability(500)));
+  public static final RegistryObject<Item> IRON_MACE = ITEMS.register("iron_mace", () -> new MaceItem(Tiers.IRON, 5.0F, -2.8F, new Item.Properties().defaultDurability(500)));
+  public static final RegistryObject<Item> STEEL_MACE = ITEMS.register("steel_mace", () -> new MaceItem(WeaponryToolTiers.STEEL, 7.0F, -2.8F, new Item.Properties().defaultDurability(2000)));
   
-  public static final RegistryObject<Item> WOODEN_HAMMER = ITEMS.register("wooden_hammer", () -> new HammerItem(Tiers.WOOD, 5, -2.8F, new Item.Properties().defaultDurability(200)));
-  public static final RegistryObject<Item> STEEL_HAMMER = ITEMS.register("steel_hammer", () -> new HammerItem(WeaponryToolTiers.STEEL, 9, -2.8F, new Item.Properties().defaultDurability(2000)));
+  public static final RegistryObject<Item> WOODEN_HAMMER = ITEMS.register("wooden_hammer", () -> new HammerItem(Tiers.WOOD, 5.0F, -2.8F, new Item.Properties().defaultDurability(200)));
+  public static final RegistryObject<Item> STEEL_HAMMER = ITEMS.register("steel_hammer", () -> new HammerItem(WeaponryToolTiers.STEEL, 9.0F, -2.8F, new Item.Properties().defaultDurability(2000)));
   
-  public static final RegistryObject<Item> TERRAPOTTA_FIST = ITEMS.register("terrapotta_fist", () -> new FistItem(WeaponryFistTiers.TERRAPOTTA, 3, -1.0F, new Item.Properties()));
-  public static final RegistryObject<Item> GAUNTILUS_FIST = ITEMS.register("gauntilus_fist", () -> new FistItem(WeaponryFistTiers.NAUTILUS, 3, -1.0F, new Item.Properties()));
-  public static final RegistryObject<Item> FIST_OF_THE_SEA_FIST = ITEMS.register("fist_of_the_sea_fist", () -> new FistItem(WeaponryFistTiers.HEART_OF_THE_SEA, 3, -1.0F, new Item.Properties()));
-  public static final RegistryObject<Item> SHULKER_GAUNTLET_FIST = ITEMS.register("shulker_gauntlet_fist", () -> new FistItem(WeaponryFistTiers.SHULKER, 3, -1.0F, new Item.Properties()));
+  public static final RegistryObject<Item> GLASS_RAPIER = ITEMS.register("glass_rapier", () -> new GlassRapierItem(WeaponrySwordTiers.GLASS, 1.0F, -1.0F, new Item.Properties().defaultDurability(0)));
+  public static final RegistryObject<Item> MACHUAHUITL_CLAYMORE = ITEMS.register("machuahuitl_claymore", () -> new Machuahuitltem(WeaponrySwordTiers.MACHUAHUITL, 1.0F, -1.0F, new Item.Properties()));
+  public static final RegistryObject<Item> SOULMETAL_SWORD = ITEMS.register("soulmetal_sword", () -> new SoulmetalSwordItem(WeaponrySwordTiers.SOULMETAL, 1.0F, -1.0F, new Item.Properties()));
+  public static final RegistryObject<Item> KATANA = ITEMS.register("katana", () -> new KatanaItem(WeaponrySwordTiers.KATANA, 1.0F, -1.0F, new Item.Properties()));
+  public static final RegistryObject<Item> BLOODTHIRSTER_CLAYMORE = ITEMS.register("bloodthirster_claymore", () -> new BloodthirsterItem(WeaponrySwordTiers.BLOODTHIRSTER, 1.0F, -1.0F, new Item.Properties()));
+  public static final RegistryObject<Item> BREAKER_BLADE = ITEMS.register("breaker_blade_claymore", () -> new BreakerBladeItem(WeaponrySwordTiers.BREAKER, 1.0F, -1.0F, new Item.Properties()));
+  
+  public static final RegistryObject<Item> TERRAPOTTA_FIST = ITEMS.register("terrapotta_fist", () -> new TerrapottaFistItem(WeaponryFistTiers.TERRAPOTTA, 3.0F, -1.0F, new Item.Properties()));
+  public static final RegistryObject<Item> GAUNTILUS_FIST = ITEMS.register("gauntilus_fist", () -> new GauntilusFistItem(WeaponryFistTiers.NAUTILUS, 3.0F, -1.0F, new Item.Properties()));
+  public static final RegistryObject<Item> FIST_OF_THE_SEA_FIST = ITEMS.register("fist_of_the_sea_fist", () -> new FistOfTheSeaItem(WeaponryFistTiers.HEART_OF_THE_SEA, 3.0F, -1.0F, new Item.Properties()));
+  public static final RegistryObject<Item> SHULKER_GAUNTLET_FIST = ITEMS.register("shulker_gauntlet_fist", () -> new ShulkerGauntletFistItem(WeaponryFistTiers.SHULKER, 3.0F, -1.0F, new Item.Properties()));
   
   public static final RegistryObject<Item> DIAMOND_KNIFE = ITEMS.register("diamond_knife", () -> new KnifeItem(Tiers.DIAMOND, 2.0F, -2.0F, new Item.Properties()));
   public static final RegistryObject<Item> NETHERITE_KNIFE = ITEMS.register("netherite_knife", () -> new KnifeItem(Tiers.NETHERITE, 2.5F, -2.0F, new Item.Properties()));

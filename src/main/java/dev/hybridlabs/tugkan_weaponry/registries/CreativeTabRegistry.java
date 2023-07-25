@@ -1,13 +1,24 @@
 package dev.hybridlabs.tugkan_weaponry.registries;
 
+import net.minecraft.core.Holder;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.EnchantedBookItem;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.enchantment.EnchantmentCategory;
+import net.minecraft.world.item.enchantment.EnchantmentInstance;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.EnumSet;
+import java.util.Set;
+import java.util.stream.IntStream;
 
 import static dev.hybridlabs.tugkan_weaponry.Main.MODID;
 import static dev.hybridlabs.tugkan_weaponry.registries.ItemRegistry.*;
@@ -60,6 +71,12 @@ public class CreativeTabRegistry {
       output.accept(GAUNTILUS_FIST.get());
       output.accept(FIST_OF_THE_SEA_FIST.get());
       output.accept(SHULKER_GAUNTLET_FIST.get());
+      output.accept(GLASS_RAPIER.get());
+      output.accept(MACHUAHUITL_CLAYMORE.get());
+      output.accept(SOULMETAL_SWORD.get());
+      output.accept(KATANA.get());
+      output.accept(BLOODTHIRSTER_CLAYMORE.get());
+      output.accept(BREAKER_BLADE.get());
     }).build());
 
   public static void init(IEventBus modEventBus) {
@@ -79,5 +96,13 @@ public class CreativeTabRegistry {
       event.accept(TITANITE_INGOT);
       event.accept(TITANITE_SCRAP);
     }
+  }
+  
+  private static void generateEnchantmentBookTypesAllLevels(CreativeModeTab.Output output, HolderLookup<Enchantment> enchantmentholder, Set<EnchantmentCategory> category, CreativeModeTab.TabVisibility tabVisibility) {
+    enchantmentholder.listElements().map(Holder::value)
+      .filter((enchantment) -> enchantment.allowedInCreativeTab(Items.ENCHANTED_BOOK, category))
+      .flatMap((enchantment) -> IntStream.rangeClosed(enchantment.getMinLevel(), enchantment.getMaxLevel())
+        .mapToObj((level) -> EnchantedBookItem.createForEnchantment(new EnchantmentInstance(enchantment, level))))
+      .forEach((item) -> output.accept(item, tabVisibility));
   }
 }

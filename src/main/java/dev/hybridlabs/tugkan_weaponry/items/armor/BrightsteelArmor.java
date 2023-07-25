@@ -1,7 +1,7 @@
 package dev.hybridlabs.tugkan_weaponry.items.armor;
 
 import dev.hybridlabs.tugkan_weaponry.client.models.BrightsteelArmorModel;
-import dev.hybridlabs.tugkan_weaponry.items.ArmoryMaterials;
+import dev.hybridlabs.tugkan_weaponry.items.tiers.ArmoryMaterials;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.geom.ModelPart;
