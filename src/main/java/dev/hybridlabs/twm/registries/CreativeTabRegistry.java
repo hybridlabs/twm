@@ -1,6 +1,5 @@
 package dev.hybridlabs.twm.registries;
 
-import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -11,9 +10,10 @@ import net.minecraftforge.registries.RegistryObject;
 
 import static dev.hybridlabs.twm.Main.MODID;
 import static dev.hybridlabs.twm.registries.ItemRegistry.*;
+import static net.minecraft.core.registries.Registries.CREATIVE_MODE_TAB;
 
 public class CreativeTabRegistry {
-  public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
+  public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(CREATIVE_MODE_TAB, MODID);
 
   public static final RegistryObject<CreativeModeTab> ARMORY_TAB = CREATIVE_MODE_TABS.register("armors", () -> CreativeModeTab.builder()
     .title(Component.translatable("twm.itemgroup.armors"))
