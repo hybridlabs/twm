@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "tugkans_weaponry:item/golden_pickaxe",
-		"particle": "tugkans_weaponry:item/golden_pickaxe"
+		"0": "twm:item/golden_pickaxe",
+		"particle": "twm:item/golden_pickaxe"
 	},
 	"elements": [
 		{

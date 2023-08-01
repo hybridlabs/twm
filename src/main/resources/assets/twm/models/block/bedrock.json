@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "twm:block/bedrock_top",
+    "side": "twm:block/bedrock_side"
+  }
+}

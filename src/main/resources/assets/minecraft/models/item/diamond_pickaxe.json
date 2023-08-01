@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "tugkans_weaponry:item/diamond_pickaxe",
-		"particle": "tugkans_weaponry:item/diamond_pickaxe"
+		"0": "twm:item/diamond_pickaxe",
+		"particle": "twm:item/diamond_pickaxe"
 	},
 	"elements": [
 		{

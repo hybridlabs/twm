@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "tugkans_weaponry:item/golden_sword",
-		"particle": "tugkans_weaponry:item/golden_sword"
+		"0": "twm:item/golden_sword",
+		"particle": "twm:item/golden_sword"
 	},
 	"elements": [
 		{

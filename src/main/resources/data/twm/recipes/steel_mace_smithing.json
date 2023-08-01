@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "twm:iron_mace"
+  },
+  "addition": {
+    "tag": "forge:storage_blocks/steel"
+  },
+  "result": {
+    "item": "twm:steel_mace"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}

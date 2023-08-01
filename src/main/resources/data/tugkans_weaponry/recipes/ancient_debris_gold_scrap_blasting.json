@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:blasting",
-  "experience": 1,
-  "cookingtime": 100,
-  "ingredient": {
-    "item": "tugkans_weaponry:gold_ancient_debris"
-  },
-  "result": "tugkans_weaponry:aurumite_scrap"
-}

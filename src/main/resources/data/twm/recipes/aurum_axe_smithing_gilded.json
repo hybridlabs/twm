@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "twm:gilded_netherite_axe"
+  },
+  "addition": {
+    "item": "twm:aurumite_ingot"
+  },
+  "result": {
+    "item": "twm:aurum_axe"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}

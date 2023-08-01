@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "twm:block/gold_ancient_debris_top_netherrack",
+    "side": "twm:block/gold_ancient_debris_side_netherrack"
+  }
+}

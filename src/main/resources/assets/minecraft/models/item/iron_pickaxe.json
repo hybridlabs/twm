@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "tugkans_weaponry:item/iron_pickaxe",
-		"particle": "tugkans_weaponry:item/iron_pickaxe"
+		"0": "twm:item/iron_pickaxe",
+		"particle": "twm:item/iron_pickaxe"
 	},
 	"elements": [
 		{

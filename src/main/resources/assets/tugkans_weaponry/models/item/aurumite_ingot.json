@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "tugkans_weaponry:item/aurumite_ingot"
-  }
-}

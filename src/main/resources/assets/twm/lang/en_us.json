@@ -1,0 +1,95 @@
+{
+  "twm.itemgroup.weapons": "TugkanDeMan's Weaponry",
+  "twm.itemgroup.armors": "TugkanDeMan's Armory",
+
+  "item.twm.wooden_club_mace": "Wooden Club",
+  "item.twm.wooden_mace": "Wooden Mace",
+  "item.twm.copper_mace": "Copper Mace",
+  "item.twm.iron_mace": "Iron Mace",
+  "item.twm.steel_mace": "Steel Mace",
+
+  "item.twm.wooden_hammer": "Wooden Hammer",
+  "item.twm.steel_hammer": "Steel Hammer",
+
+  "item.twm.terrapotta_fist": "Terrapotta Fist",
+  "item.twm.gauntilus_fist": "Gauntilus Fist",
+  "item.twm.fist_of_the_sea_fist": "Fist of the Sea",
+  "item.twm.fist_of_the_sea_fist.description": "The waves of the sea empower your fists",
+  "item.twm.shulker_gauntlet_fist": "Shulker Gauntlet",
+
+  "item.twm.the_bloodthirster_claymore": "The Bloodthirster",
+  "item.twm.the_bloodthirster_claymore.description": "Absorbs the enemy health in a pinch",
+  "item.twm.soulmetal_sword": "Soulmetal Sword",
+  "item.twm.katana": "katana",
+  "item.twm.katana.description": "Grants the strength of the wind",
+  "item.twm.breaker_blade_claymore": "Breaker Blade",
+  "item.twm.machuahuitl_claymore": "Machuahuitl",
+  "item.twm.shattered_glass": "Shattered Glass",
+  "item.twm.glass_rapier": "Glass Rapier",
+  "item.twm.glass_rapier.description": "May shatter when using",
+
+  "item.twm.brightsteel_knife": "Brightsteel Knife",
+  "item.twm.netherite_knife": "Netherite Knife",
+  "item.twm.gilded_netherite_knife": "Gilded Netherite Knife",
+  "item.twm.diamond_knife": "Diamond Knife",
+
+  "item.twm.brightsteel_helmet": "Brightsteel Helmet",
+  "item.twm.brightsteel_chestplate": "Brightsteel Chestplate",
+  "item.twm.brightsteel_leggings": "Brightsteel Leggings",
+  "item.twm.brightsteel_boots": "Brightsteel Boots",
+
+  "item.twm.copper_pickaxe": "Copper Pickaxe",
+  "item.twm.copper_shovel": "Copper Shovel",
+  "item.twm.copper_axe": "Copper Axe",
+  "item.twm.copper_sword": "Copper Sword",
+
+  "item.twm.steel_pickaxe": "Steel Pickaxe",
+  "item.twm.steel_shovel": "Steel Shovel",
+  "item.twm.steel_axe": "Steel Axe",
+  "item.twm.steel_sword": "Steel Sword",
+
+  "item.twm.obsidian_tipped_diamond_pickaxe": "Obsidian Tipped Pickaxe",
+  "item.twm.obsidian_edged_diamond_shovel": "Obsidian Edged Shovel",
+  "item.twm.obsidian_edged_diamond_axe": "Obsidian Edged Axe",
+
+  "item.twm.gilded_netherite_pickaxe": "Gilded Netherite Pickaxe",
+  "item.twm.gilded_netherite_shovel": "Gilded Netherite Shovel",
+  "item.twm.gilded_netherite_axe": "Gilded Netherite Axe",
+  "item.twm.gilded_netherite_sword": "Gilded Netherite Sword",
+
+  "item.twm.brightsteel_pickaxe": "Brightsteel Pickaxe",
+  "item.twm.brightsteel_shovel": "Brightsteel Shovel",
+  "item.twm.brightsteel_axe": "Brightsteel Axe",
+  "item.twm.brightsteel_sword": "Brightsteel Sword",
+
+  "item.twm.aurum_pickaxe": "Aurum Pickaxe",
+  "item.twm.aurum_shovel": "Aurum Shovel",
+  "item.twm.aurum_axe": "Aurum Axe",
+
+  "block.twm.ancient_debris": "Ancient Debris",
+  "block.twm.ancient_debris_deepslate": "Deepslate Ancient Debris",
+  "item.twm.titanite_scrap": "Titanite Scrap",
+  "item.twm.titanite_ingot": "Titanite Ingot",
+
+  "block.twm.gold_ancient_debris": "Ancient Debris",
+  "block.twm.gold_ancient_debris_netherrack": "Netherrack Ancient Debris",
+  "item.twm.aurumite_scrap": "Aurumite Scrap",
+  "item.twm.aurumite_ingot": "Aurumite Ingot",
+  "block.twm.aurumite_block": "Block of Aurumite",
+
+  "item.twm.brightsteel_ingot": "Brightsteel Ingot",
+  "block.twm.brightsteel_block": "Block of Brightsteel",
+
+  "item.twm.bedrock_sample": "Bedrock Sample",
+  "block.twm.bedrock": "Bedrock",
+  "block.twm.bedrock_bricks": "Bedrock Bricks",
+  "block.twm.bedrock_bricks_unbreakable": "Bedrock Bricks",
+
+  "item.twm.obsidian_shard": "Obsidian Shard",
+
+  "item.twm.steel_ingot": "Steel Ingot",
+  "block.twm.steel_block": "Block of Steel",
+
+  "enchantment.twm.levitating": "Levitating",
+  "enchantment.twm.disarming": "Disarming"
+}

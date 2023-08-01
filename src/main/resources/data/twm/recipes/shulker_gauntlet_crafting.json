@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0#0",
+    "0 0"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "#": {
+      "item": "minecraft:shulker_shell"
+    }
+  },
+  "result": {
+    "item": "twm:shulker_gauntlet_fist",
+    "count": 1
+  }
+}

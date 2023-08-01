@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "twm:gold_ancient_debris"
+  },
+  "result": "twm:aurumite_scrap"
+}

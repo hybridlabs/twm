@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "twm:gilded_netherite_pickaxe"
+  },
+  "addition": {
+    "item": "twm:aurumite_ingot"
+  },
+  "result": {
+    "item": "twm:aurum_pickaxe"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}

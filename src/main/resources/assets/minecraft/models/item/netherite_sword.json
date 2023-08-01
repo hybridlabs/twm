@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"1": "tugkans_weaponry:item/netherite_sword",
-		"particle": "tugkans_weaponry:item/netherite_sword"
+		"1": "twm:item/netherite_sword",
+		"particle": "twm:item/netherite_sword"
 	},
 	"elements": [
 		{

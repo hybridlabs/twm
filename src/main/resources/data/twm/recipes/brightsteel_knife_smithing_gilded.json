@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "twm:gilded_netherite_knife"
+  },
+  "addition": {
+    "item": "twm:brightsteel_ingot"
+  },
+  "result": {
+    "item": "twm:brightsteel_knife"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}

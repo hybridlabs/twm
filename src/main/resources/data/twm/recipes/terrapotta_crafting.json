@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0#0",
+    "0 0"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:leather"
+    },
+    "#": {
+      "item": "minecraft:flower_pot"
+    }
+  },
+  "result": {
+    "item": "twm:terrapotta_fist",
+    "count": 1
+  }
+}

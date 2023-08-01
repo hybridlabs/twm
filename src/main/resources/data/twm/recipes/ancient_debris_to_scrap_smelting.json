@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 1,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "twm:ancient_debris"
+  },
+  "result": "twm:titanite_scrap"
+}

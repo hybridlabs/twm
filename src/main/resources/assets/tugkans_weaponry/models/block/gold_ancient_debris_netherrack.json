@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "tugkans_weaponry:block/gold_ancient_debris_top_netherrack",
-    "side": "tugkans_weaponry:block/gold_ancient_debris_side_netherrack"
-  }
-}

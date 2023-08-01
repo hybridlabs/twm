@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "tugkans_weaponry:ancient_debris",
-    "tugkans_weaponry:ancient_debris_deepslate",
-    "tugkans_weaponry:gold_ancient_debris",
-    "tugkans_weaponry:gold_ancient_debris_netherrack"
+    "twm:ancient_debris",
+    "twm:ancient_debris_deepslate",
+    "twm:gold_ancient_debris",
+    "twm:gold_ancient_debris_netherrack"
   ]
 }

@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "tugkans_weaponry:block/ancient_debris_top_deepslate",
-    "side": "tugkans_weaponry:block/ancient_debris_side_deepslate"
-  }
-}

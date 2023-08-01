@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "twm:titanite_scrap"
+    },
+    {
+      "item": "twm:titanite_scrap"
+    },
+    {
+      "item": "twm:titanite_scrap"
+    },
+    {
+      "item": "twm:titanite_scrap"
+    },
+    {
+      "item": "twm:bedrock_sample"
+    },
+    {
+      "item": "twm:bedrock_sample"
+    },
+    {
+      "item": "twm:bedrock_sample"
+    },
+    {
+      "item": "twm:bedrock_sample"
+    }
+  ],
+  "result": {
+    "item": "twm:titanite_ingot",
+    "count": 1
+  }
+}
