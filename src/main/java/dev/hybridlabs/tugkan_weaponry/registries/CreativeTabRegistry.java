@@ -16,7 +16,6 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
-import java.util.EnumSet;
 import java.util.Set;
 import java.util.stream.IntStream;
 
@@ -26,9 +25,19 @@ import static dev.hybridlabs.tugkan_weaponry.registries.ItemRegistry.*;
 public class CreativeTabRegistry {
   public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
+  public static final RegistryObject<CreativeModeTab> ARMORY_TAB = CREATIVE_MODE_TABS.register("armors", () -> CreativeModeTab.builder()
+    .title(Component.translatable("tugkans_weaponry.itemgroup.armors"))
+    .icon(() -> BRIGHTSTEEL_HELMET.get().getDefaultInstance())
+    .displayItems((parameters, output) -> {
+      output.accept(BRIGHTSTEEL_BOOTS.get());
+      output.accept(BRIGHTSTEEL_LEGGINGS.get());
+      output.accept(BRIGHTSTEEL_CHESTPLATE.get());
+      output.accept(BRIGHTSTEEL_HELMET.get());
+    }).build());
+  
   public static final RegistryObject<CreativeModeTab> WEAPONRY_TAB = CREATIVE_MODE_TABS.register("weapons", () -> CreativeModeTab.builder()
     .title(Component.translatable("tugkans_weaponry.itemgroup.weapons"))
-    .icon(() -> BRIGHTSTEEL_SWORD.get().getDefaultInstance())
+    .icon(() -> SOULMETAL_SWORD.get().getDefaultInstance())
     .displayItems((parameters, output) -> {
       output.accept(COPPER_SWORD.get());
       output.accept(COPPER_SHOVEL.get());
@@ -56,10 +65,6 @@ public class CreativeTabRegistry {
       output.accept(NETHERITE_KNIFE.get());
       output.accept(GILDED_NETHERITE_KNIFE.get());
       output.accept(BRIGHTSTEEL_KNIFE.get());
-      output.accept(BRIGHTSTEEL_BOOTS.get());
-      output.accept(BRIGHTSTEEL_LEGGINGS.get());
-      output.accept(BRIGHTSTEEL_CHESTPLATE.get());
-      output.accept(BRIGHTSTEEL_HELMET.get());
       output.accept(WOODEN_CLUB.get());
       output.accept(WOODEN_MACE.get());
       output.accept(COPPER_MACE.get());
@@ -95,6 +100,17 @@ public class CreativeTabRegistry {
       event.accept(STEEL_INGOT);
       event.accept(TITANITE_INGOT);
       event.accept(TITANITE_SCRAP);
+    } else if (event.getTabKey().equals(CreativeModeTabs.NATURAL_BLOCKS)) {
+      event.accept(STEEL_BLOCK);
+      event.accept(BEDROCK);
+      event.accept(BRIGHTSTEEL_BLOCK);
+      event.accept(ANCIENT_DEBRIS);
+      event.accept(ANCIENT_DEBRIS_DEEPSLATE);
+      event.accept(BEDROCK_BRICKS);
+      event.accept(BEDROCK_BRICKS_UNBREAKABLE);
+      event.accept(GOLD_ANCIENT_DEBRIS);
+      event.accept(GOLD_ANCIENT_DEBRIS_NETHERRACK);
+      event.accept(AURUMITE_BLOCK);
     }
   }
   

@@ -1,3 +1,91 @@
 {
-  "tugkans_weaponry.itemgroup.weapons": "Tugkan's Weapons"
+  "tugkans_weaponry.itemgroup.weapons": "TugkanDeMan's Weaponry",
+  "tugkans_weaponry.itemgroup.armors": "TugkanDeMan's Armory",
+
+  "item.tugkans_weaponry.wooden_club_mace": "Wooden Club",
+  "item.tugkans_weaponry.wooden_mace": "Wooden Mace",
+  "item.tugkans_weaponry.copper_mace": "Copper Mace",
+  "item.tugkans_weaponry.iron_mace": "Iron Mace",
+  "item.tugkans_weaponry.steel_mace": "Steel Mace",
+
+  "item.tugkans_weaponry.wooden_hammer": "Wooden Hammer",
+  "item.tugkans_weaponry.steel_hammer": "Steel Hammer",
+
+  "item.tugkans_weaponry.terrapotta_fist": "Terrapotta Fist",
+  "item.tugkans_weaponry.gauntilus_fist": "Gauntilus Fist",
+  "item.tugkans_weaponry.fist_of_the_sea_fist": "Fist of the Sea",
+  "item.tugkans_weaponry.fist_of_the_sea_fist.description": "The waves of the sea empower your fists",
+  "item.tugkans_weaponry.shulker_gauntlet_fist": "Shulker Gauntlet",
+
+  "item.tugkans_weaponry.bloodthirster_claymore": "The Bloodthirster",
+  "item.tugkans_weaponry.bloodthirster_claymore.description": "Absorbs the enemy health in a pinch",
+  "item.tugkans_weaponry.soulmetal_sword": "Soulmetal Sword",
+  "item.tugkans_weaponry.katana": "katana",
+  "item.tugkans_weaponry.katana.description": "Grants the strength of the wind",
+  "item.tugkans_weaponry.breaker_blade_claymore": "Breaker Blade",
+  "item.tugkans_weaponry.machuahuitl_claymore": "Machuahuitl",
+  "item.tugkans_weaponry.glass_rapier": "Glass Rapier",
+  "item.tugkans_weaponry.glass_rapier.description": "May shatter when using",
+
+  "item.tugkans_weaponry.brightsteel_knife": "Brightsteel Knife",
+  "item.tugkans_weaponry.netherite_knife": "Netherite Knife",
+  "item.tugkans_weaponry.gilded_netherite_knife": "Gilded Netherite Knife",
+  "item.tugkans_weaponry.diamond_knife": "Diamond Knife",
+
+  "item.tugkans_weaponry.brightsteel_helmet": "Brightsteel Helmet",
+  "item.tugkans_weaponry.brightsteel_chestplate": "Brightsteel Chestplate",
+  "item.tugkans_weaponry.brightsteel_leggings": "Brightsteel Leggings",
+  "item.tugkans_weaponry.brightsteel_boots": "Brightsteel Boots",
+
+  "item.tugkans_weaponry.copper_pickaxe": "Copper Pickaxe",
+  "item.tugkans_weaponry.copper_shovel": "Copper Shovel",
+  "item.tugkans_weaponry.copper_axe": "Copper Axe",
+  "item.tugkans_weaponry.copper_sword": "Copper Sword",
+
+  "item.tugkans_weaponry.steel_pickaxe": "Steel Pickaxe",
+  "item.tugkans_weaponry.steel_shovel": "Steel Shovel",
+  "item.tugkans_weaponry.steel_axe": "Steel Axe",
+  "item.tugkans_weaponry.steel_sword": "Steel Sword",
+
+  "item.tugkans_weaponry.obsidian_edged_diamond_pickaxe": "Obsidian Tipped Pickaxe",
+  "item.tugkans_weaponry.obsidian_edged_diamond_shovel": "Obsidian Edged Shovel",
+  "item.tugkans_weaponry.obsidian_edged_diamond_axe": "Obsidian Edged Axe",
+
+  "item.tugkans_weaponry.gilded_netherite_pickaxe": "Gilded Netherite Pickaxe",
+  "item.tugkans_weaponry.gilded_netherite_shovel": "Gilded Netherite Shovel",
+  "item.tugkans_weaponry.gilded_netherite_axe": "Gilded Netherite Axe",
+  "item.tugkans_weaponry.gilded_netherite_sword": "Gilded Netherite Sword",
+
+  "item.tugkans_weaponry.brightsteel_pickaxe": "Brightsteel Pickaxe",
+  "item.tugkans_weaponry.brightsteel_shovel": "Brightsteel Shovel",
+  "item.tugkans_weaponry.brightsteel_axe": "Brightsteel Axe",
+  "item.tugkans_weaponry.brightsteel_sword": "Brightsteel Sword",
+
+  "item.tugkans_weaponry.aurum_pickaxe": "Aurum Pickaxe",
+  "item.tugkans_weaponry.aurum_shovel": "Aurum Shovel",
+  "item.tugkans_weaponry.aurum_axe": "Aurum Axe",
+
+  "block.tugkans_weaponry.ancient_debris": "Ancient Debris",
+  "block.tugkans_weaponry.ancient_debris_deepslate": "Deepslate Ancient Debris",
+  "item.tugkans_weaponry.titanite_scrap": "Titanite Scrap",
+  "item.tugkans_weaponry.titanite_ingot": "Titanite Ingot",
+
+  "block.tugkans_weaponry.gold_ancient_debris": "Ancient Debris",
+  "block.tugkans_weaponry.gold_ancient_debris_netherrack": "Netherrack Ancient Debris",
+  "item.tugkans_weaponry.aurumite_scrap": "Aurumite Scrap",
+  "item.tugkans_weaponry.aurumite_ingot": "Aurumite Ingot",
+  "block.tugkans_weaponry.aurumite_block": "Block of Aurumite",
+
+  "item.tugkans_weaponry.brightsteel_ingot": "Brightsteel Ingot",
+  "block.tugkans_weaponry.brightsteel_block": "Block of Brightsteel",
+
+  "item.tugkans_weaponry.bedrock_sample": "Bedrock Sample",
+  "block.tugkans_weaponry.bedrock": "Bedrock",
+  "block.tugkans_weaponry.bedrock_bricks": "Bedrock Bricks",
+  "block.tugkans_weaponry.bedrock_bricks_unbreakable": "Bedrock Bricks",
+
+  "item.tugkans_weaponry.obsidian_shard": "Obsidian Shard",
+
+  "item.tugkans_weaponry.steel_ingot": "Steel Ingot",
+  "block.tugkans_weaponry.steel_block": "Block of Steel"
 }

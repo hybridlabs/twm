@@ -26,7 +26,6 @@ public class ItemRegistry {
   public static final RegistryObject<Item> BEDROCK_SAMPLE = ITEMS.register("bedrock_sample", () -> new Item(new Item.Properties()));
   public static final RegistryObject<Item> BRIGHTSTEEL_INGOT = ITEMS.register("brightsteel_ingot", () -> new Item(new Item.Properties()));
   public static final RegistryObject<Item> OBSIDIAN_SHARD = ITEMS.register("obsidian_shard", () -> new Item(new Item.Properties()));
-  public static final RegistryObject<Item> SHATTERED_GLASS = ITEMS.register("shattered_glass", () -> new Item(new Item.Properties()));
   public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register("steel_ingot", () -> new Item(new Item.Properties()));
   public static final RegistryObject<Item> TITANITE_INGOT = ITEMS.register("titanite_ingot", () -> new Item(new Item.Properties()));
   public static final RegistryObject<Item> TITANITE_SCRAP = ITEMS.register("titanite_scrap", () -> new Item(new Item.Properties()));
@@ -53,12 +52,13 @@ public class ItemRegistry {
   public static final RegistryObject<Item> WOODEN_HAMMER = ITEMS.register("wooden_hammer", () -> new HammerItem(Tiers.WOOD, 5.0F, -2.8F, new Item.Properties().defaultDurability(200)));
   public static final RegistryObject<Item> STEEL_HAMMER = ITEMS.register("steel_hammer", () -> new HammerItem(WeaponryToolTiers.STEEL, 9.0F, -2.8F, new Item.Properties().defaultDurability(2000)));
   
-  public static final RegistryObject<Item> GLASS_RAPIER = ITEMS.register("glass_rapier", () -> new GlassRapierItem(WeaponrySwordTiers.GLASS, 1.0F, -1.0F, new Item.Properties().defaultDurability(0)));
-  public static final RegistryObject<Item> MACHUAHUITL_CLAYMORE = ITEMS.register("machuahuitl_claymore", () -> new Machuahuitltem(WeaponrySwordTiers.MACHUAHUITL, 1.0F, -1.0F, new Item.Properties()));
-  public static final RegistryObject<Item> SOULMETAL_SWORD = ITEMS.register("soulmetal_sword", () -> new SoulmetalSwordItem(WeaponrySwordTiers.SOULMETAL, 1.0F, -1.0F, new Item.Properties()));
-  public static final RegistryObject<Item> KATANA = ITEMS.register("katana", () -> new KatanaItem(WeaponrySwordTiers.KATANA, 1.0F, -1.0F, new Item.Properties()));
-  public static final RegistryObject<Item> BLOODTHIRSTER_CLAYMORE = ITEMS.register("bloodthirster_claymore", () -> new BloodthirsterItem(WeaponrySwordTiers.BLOODTHIRSTER, 1.0F, -1.0F, new Item.Properties()));
-  public static final RegistryObject<Item> BREAKER_BLADE = ITEMS.register("breaker_blade_claymore", () -> new BreakerBladeItem(WeaponrySwordTiers.BREAKER, 1.0F, -1.0F, new Item.Properties()));
+  public static final RegistryObject<Item> GLASS_RAPIER = ITEMS.register("glass_rapier", () -> new GlassRapierItem(WeaponrySwordTiers.GLASS, 3.0F, -2.0F, new Item.Properties().defaultDurability(0)));
+  public static final RegistryObject<Item> SHATTERED_GLASS = ITEMS.register("shattered_glass", () -> new ShatteredGlassItem(WeaponrySwordTiers.SHATTERED_GLASS, 3.0F, -2.0F, new Item.Properties()));
+  public static final RegistryObject<Item> MACHUAHUITL_CLAYMORE = ITEMS.register("machuahuitl_claymore", () -> new MachuahuitlItem(WeaponrySwordTiers.MACHUAHUITL, 0.5F, -2.7F, new Item.Properties()));
+  public static final RegistryObject<Item> SOULMETAL_SWORD = ITEMS.register("soulmetal_sword", () -> new SoulmetalSwordItem(WeaponrySwordTiers.SOULMETAL, 3.0F, -2.4F, new Item.Properties()));
+  public static final RegistryObject<Item> KATANA = ITEMS.register("katana", () -> new KatanaItem(WeaponrySwordTiers.KATANA, 3.0F, -1.5F, new Item.Properties()));
+  public static final RegistryObject<Item> BLOODTHIRSTER_CLAYMORE = ITEMS.register("bloodthirster_claymore", () -> new BloodthirsterItem(WeaponrySwordTiers.BLOODTHIRSTER, 3.0F, -2.7F, new Item.Properties()));
+  public static final RegistryObject<Item> BREAKER_BLADE = ITEMS.register("breaker_blade_claymore", () -> new BreakerBladeItem(WeaponrySwordTiers.BREAKER, 3.0F, -2.7F, new Item.Properties()));
   
   public static final RegistryObject<Item> TERRAPOTTA_FIST = ITEMS.register("terrapotta_fist", () -> new TerrapottaFistItem(WeaponryFistTiers.TERRAPOTTA, 3.0F, -1.0F, new Item.Properties()));
   public static final RegistryObject<Item> GAUNTILUS_FIST = ITEMS.register("gauntilus_fist", () -> new GauntilusFistItem(WeaponryFistTiers.NAUTILUS, 3.0F, -1.0F, new Item.Properties()));
@@ -66,8 +66,8 @@ public class ItemRegistry {
   public static final RegistryObject<Item> SHULKER_GAUNTLET_FIST = ITEMS.register("shulker_gauntlet_fist", () -> new ShulkerGauntletFistItem(WeaponryFistTiers.SHULKER, 3.0F, -1.0F, new Item.Properties()));
   
   public static final RegistryObject<Item> DIAMOND_KNIFE = ITEMS.register("diamond_knife", () -> new KnifeItem(Tiers.DIAMOND, 2.0F, -2.0F, new Item.Properties()));
-  public static final RegistryObject<Item> NETHERITE_KNIFE = ITEMS.register("netherite_knife", () -> new KnifeItem(Tiers.NETHERITE, 2.5F, -2.0F, new Item.Properties()));
-  public static final RegistryObject<Item> GILDED_NETHERITE_KNIFE = ITEMS.register("gilded_netherite_knife", () -> new KnifeItem(WeaponryToolTiers.GILDED_NETHERITE, 2.5F, -2.0F, new Item.Properties()));
+  public static final RegistryObject<Item> NETHERITE_KNIFE = ITEMS.register("netherite_knife", () -> new KnifeItem(Tiers.NETHERITE, 3.0F, -2.0F, new Item.Properties()));
+  public static final RegistryObject<Item> GILDED_NETHERITE_KNIFE = ITEMS.register("gilded_netherite_knife", () -> new KnifeItem(WeaponryToolTiers.GILDED_NETHERITE, 3.0F, -2.0F, new Item.Properties()));
   public static final RegistryObject<Item> BRIGHTSTEEL_KNIFE = ITEMS.register("brightsteel_knife", () -> new KnifeItem(WeaponryToolTiers.BRIGHTSTEEL, 2.0F, -2.0F, new Item.Properties()));
 
   public static final RegistryObject<Item> COPPER_SWORD = ITEMS.register("copper_sword", () -> new SwordItem(WeaponryToolTiers.COPPER, 3, -2.4F, new Item.Properties()));
@@ -75,7 +75,7 @@ public class ItemRegistry {
   public static final RegistryObject<Item> COPPER_PICKAXE = ITEMS.register("copper_pickaxe", () -> new PickaxeItem(WeaponryToolTiers.COPPER, 1, -2.8F, new Item.Properties()));
   public static final RegistryObject<Item> COPPER_AXE = ITEMS.register("copper_axe", () -> new AxeItem(WeaponryToolTiers.COPPER, 7.0F, -3.2F, new Item.Properties()));
 
-  public static final RegistryObject<Item> STEEL_SWORD = ITEMS.register("steel_sword", () -> new SwordItem(WeaponryToolTiers.STEEL, 3, -2.4F, new Item.Properties()));
+  public static final RegistryObject<Item> STEEL_SWORD = ITEMS.register("steel_sword", () -> new SteelSwordItem(WeaponryToolTiers.STEEL, 3, -2.4F, new Item.Properties()));
   public static final RegistryObject<Item> STEEL_SHOVEL = ITEMS.register("steel_shovel", () -> new ShovelItem(WeaponryToolTiers.STEEL, 1.5F, -3.0F, new Item.Properties()));
   public static final RegistryObject<Item> STEEL_PICKAXE = ITEMS.register("steel_pickaxe", () -> new PickaxeItem(WeaponryToolTiers.STEEL, 1, -2.8F, new Item.Properties()));
   public static final RegistryObject<Item> STEEL_AXE = ITEMS.register("steel_axe", () -> new AxeItem(WeaponryToolTiers.STEEL, 6.0F, -3.1F, new Item.Properties()));

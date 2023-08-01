@@ -9,7 +9,7 @@ import net.minecraftforge.fml.common.Mod;
 import static dev.hybridlabs.tugkan_weaponry.Main.MODID;
 
 @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-public class ClientEventListener {
+public class ClientEventBusListener {
   @SubscribeEvent
   public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
     event.registerLayerDefinition(BrightsteelArmorModel.Boots.LAYER_LOCATION, BrightsteelArmorModel.Boots::createBodyLayer);

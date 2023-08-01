@@ -1,6 +1,5 @@
 package dev.hybridlabs.tugkan_weaponry.items.enchantment;
 
-import dev.hybridlabs.tugkan_weaponry.items.weapons.FistItem;
 import dev.hybridlabs.tugkan_weaponry.items.weapons.fists.ShulkerGauntletFistItem;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ItemStack;

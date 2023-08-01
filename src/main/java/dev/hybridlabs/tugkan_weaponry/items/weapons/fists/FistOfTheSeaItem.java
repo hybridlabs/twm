@@ -7,6 +7,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Tier;
@@ -22,26 +23,29 @@ public class FistOfTheSeaItem extends FistItem {
   
   @Override
   public boolean hurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-    waterPower(stack, target, attacker);
     target.playSound(SoundEvents.SHULKER_HURT_CLOSED, 1.5f, 1.5f);
     target.playSound(SoundEvents.ELDER_GUARDIAN_HURT, 1.5f, 1.2f);
     target.playSound(SoundEvents.ELDER_GUARDIAN_HURT, 1.5f, 1.0f);
     return super.hurtEnemy(stack, target, attacker);
   }
   
+  @Override
+  public void inventoryTick(ItemStack stack, Level level, Entity entity, int slot, boolean selected) {
+    super.inventoryTick(stack, level, entity, slot, selected);
+    if (selected) waterPower(level, entity);
+  }
   
-  private void waterPower(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-    Level level = attacker.level();
-    if(level.isClientSide()) return;
-    if(level.getBlockState(target.blockPosition()).is(TagRegistry.FIST_OF_THE_SEA_POWER)) {
-      attacker.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, false, true));
+  private void waterPower(Level level, Entity entity) {
+    if (level.isClientSide()) return;
+    if (entity instanceof LivingEntity livingEntity && level.getBlockState(entity.blockPosition()).is(TagRegistry.FIST_OF_THE_SEA_POWER)) {
+      livingEntity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 40, 1, false, true));
     }
   }
   
   @Override
   public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
     super.appendHoverText(itemstack, world, list, flag);
-    list.add(Component.literal("The waves of the sea empower your fists").withStyle(ChatFormatting.GRAY));
+    list.add(Component.translatable("item.tugkans_weaponry.fist_of_the_sea_fist.description").withStyle(ChatFormatting.GRAY));
   }
   
 }

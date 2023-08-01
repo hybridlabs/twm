@@ -25,7 +25,7 @@ public class ShulkerGauntletFistItem extends FistItem {
   private void doLevitating(ItemStack stack, LivingEntity target, LivingEntity attacker) {
     int enchLevel = stack.getEnchantmentLevel(EnchantmentRegistry.LEVITATING.get());
     
-    if(enchLevel > 0 && !target.hasEffect(MobEffects.LEVITATION)) {
+    if (enchLevel > 0 && !target.hasEffect(MobEffects.LEVITATION)) {
       target.playSound(SoundEvents.SHULKER_SHOOT, 1.0f, 1.0f);
       target.addEffect(new MobEffectInstance(MobEffects.LEVITATION, (int) (15 * Math.pow(2, enchLevel)), enchLevel - 1, false, true));
     }

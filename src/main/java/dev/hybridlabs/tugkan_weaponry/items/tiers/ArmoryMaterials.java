@@ -14,6 +14,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.EnumMap;
 import java.util.function.Supplier;
 
+@SuppressWarnings("deprecation")
 public enum ArmoryMaterials implements StringRepresentable, ArmorMaterial {
   BRIGHTSTEEL("brightsteel", 45, Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
     map.put(ArmorItem.Type.BOOTS, 4); map.put(ArmorItem.Type.LEGGINGS, 7); map.put(ArmorItem.Type.CHESTPLATE, 9); map.put(ArmorItem.Type.HELMET, 4);
@@ -35,7 +36,7 @@ public enum ArmoryMaterials implements StringRepresentable, ArmorMaterial {
   private final float knockbackResistance;
   private final LazyLoadedValue<Ingredient> repairIngredient;
 
-  private ArmoryMaterials(String name, int durabilityMultiplier, EnumMap<ArmorItem.Type, Integer> protectionMap, int enchantmentValue, SoundEvent sound, float toughness, float knockbackResistance, Supplier<Ingredient> repairItem) {
+  ArmoryMaterials(String name, int durabilityMultiplier, EnumMap<ArmorItem.Type, Integer> protectionMap, int enchantmentValue, SoundEvent sound, float toughness, float knockbackResistance, Supplier<Ingredient> repairItem) {
     this.name = name;
     this.durabilityMultiplier = durabilityMultiplier;
     this.protectionFunctionForType = protectionMap;

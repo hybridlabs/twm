@@ -15,7 +15,9 @@ import java.util.function.Supplier;
 import static dev.hybridlabs.tugkan_weaponry.items.RegisterTierUtils.registerTier;
 import static dev.hybridlabs.tugkan_weaponry.registries.TagRegistry.NEEDS_FIST;
 
+@SuppressWarnings("deprecation")
 public enum WeaponrySwordTiers implements Tier {
+  SHATTERED_GLASS(10, 0f, -2.0f, 1, 0, () -> Ingredient.EMPTY),
   GLASS(0, 4f, 1f, 1, 22, () -> Ingredient.EMPTY),
   MACHUAHUITL(400, 4f, 6f, 1, 2, () -> Ingredient.of(ItemRegistry.OBSIDIAN_SHARD.get())),
   SOULMETAL(1000, 4.0F, 3.0F, 1, 2, () -> Ingredient.EMPTY),
@@ -69,7 +71,8 @@ public enum WeaponrySwordTiers implements Tier {
   
   //Tier registry
   public static void init() {
-    registerTier(GLASS, "glass", Tiers.STONE);
+    registerTier(SHATTERED_GLASS, "shattered_glass", Tiers.STONE);
+    registerTier(GLASS, "glass", SHATTERED_GLASS);
     registerTier(MACHUAHUITL, "machuahutil", GLASS);
     registerTier(SOULMETAL, "soulmetal", MACHUAHUITL);
     registerTier(KATANA, "katana", SOULMETAL);

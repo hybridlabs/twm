@@ -14,6 +14,7 @@ import java.util.function.Supplier;
 import static dev.hybridlabs.tugkan_weaponry.items.RegisterTierUtils.registerTier;
 import static dev.hybridlabs.tugkan_weaponry.registries.TagRegistry.NEEDS_FIST;
 
+@SuppressWarnings("deprecation")
 public enum WeaponryFistTiers implements Tier {
   TERRAPOTTA(250, 4.0F, 0.0F, 0, 10, () -> Ingredient.EMPTY),
   NAUTILUS(1000, 4.0F, 0.0F, 0, 22, () -> Ingredient.of(Items.NAUTILUS_SHELL)),

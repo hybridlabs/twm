@@ -13,5 +13,6 @@ public class Registry {
     CreativeTabRegistry.init(modEventBus);
     WeaponryToolTiers.init();
     EnchantmentRegistry.init(modEventBus);
+    SoundRegistry.init(modEventBus);
   }
 }

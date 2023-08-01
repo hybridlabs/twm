@@ -16,6 +16,7 @@ import java.util.function.Supplier;
 
 import static dev.hybridlabs.tugkan_weaponry.items.RegisterTierUtils.registerTier;
 
+@SuppressWarnings("deprecation")
 public enum WeaponryToolTiers implements Tier {
   COPPER(250, 4.0F, 1.0F, 1, 5, () -> Ingredient.of(Items.COPPER_INGOT)),
   STEEL(500, 6.0F, 2.0F, 2, 14, () -> Ingredient.of(ItemRegistry.STEEL_INGOT.get())),

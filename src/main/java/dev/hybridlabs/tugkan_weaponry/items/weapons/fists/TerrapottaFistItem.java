@@ -1,7 +1,6 @@
 package dev.hybridlabs.tugkan_weaponry.items.weapons.fists;
 
 import dev.hybridlabs.tugkan_weaponry.items.weapons.FistItem;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Tier;
