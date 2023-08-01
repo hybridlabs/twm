@@ -24,6 +24,7 @@
   "item.tugkans_weaponry.katana.description": "Grants the strength of the wind",
   "item.tugkans_weaponry.breaker_blade_claymore": "Breaker Blade",
   "item.tugkans_weaponry.machuahuitl_claymore": "Machuahuitl",
+  "item.tugkans_weaponry.shattered_glass": "Shattered Glass",
   "item.tugkans_weaponry.glass_rapier": "Glass Rapier",
   "item.tugkans_weaponry.glass_rapier.description": "May shatter when using",
 
@@ -87,5 +88,8 @@
   "item.tugkans_weaponry.obsidian_shard": "Obsidian Shard",
 
   "item.tugkans_weaponry.steel_ingot": "Steel Ingot",
-  "block.tugkans_weaponry.steel_block": "Block of Steel"
+  "block.tugkans_weaponry.steel_block": "Block of Steel",
+
+  "enchantment.tugkans_weaponry.levitating": "Levitating",
+  "enchantment.tugkans_weaponry.disarming": "Disarming"
 }
