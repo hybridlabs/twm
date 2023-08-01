@@ -42,7 +42,7 @@ public class GlassRapierItem extends GenericWeaponrySwordItem {
     Vec3 pos = attacker.position();
     Level level = attacker.level();
     
-    if(random.nextInt(0, 3 + item.getEnchantmentLevel(Enchantments.UNBREAKING) * 100) == 1) {
+    if(random.nextInt(0, 100 + item.getEnchantmentLevel(Enchantments.UNBREAKING) * 100) == 1) {
       level.playSound(null, pos.x(), pos.y(), pos.z(), SoundEvents.GLASS_BREAK, SoundSource.PLAYERS, 1.0f, 0.1f);
       level.playSound(null, pos.x(), pos.y(), pos.z(), SoundEvents.GLASS_BREAK, SoundSource.PLAYERS, 1.0f, 1.0f);
       level.playSound(null, pos.x(), pos.y(), pos.z(), SoundEvents.GLASS_BREAK, SoundSource.PLAYERS, 1.0f, 2.0f);
