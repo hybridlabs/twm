@@ -82,8 +82,10 @@ public class EventListener {
     if (tempSourceEntity instanceof Player sourceEntity && tempTargetEntity instanceof LivingEntity targetEntity) {
       AttackHand aHand = PlayerAttackHelper.getCurrentAttack(sourceEntity, ((PlayerAttackProperties)sourceEntity).getComboCount());
       Item sourceItem = aHand.itemStack().getItem();
+      // For debugging
+      // Main.LOGGER.warn(aHand.attack() + "\n" + aHand.isOffHand() + "\n" + aHand.attributes() + "\n" + aHand.combo() + "\n" + aHand.upswingRate());
       if (sourceItem instanceof MaceItem maceItem) {
-        maceStun(sourceEntity, targetEntity, event.getAmount(), maceItem);
+        maceStun(sourceEntity, targetEntity, event.getAmount(), aHand, maceItem);
       } else if (sourceItem instanceof SoulmetalSwordItem && (targetEntity instanceof AbstractPiglin || targetEntity instanceof ZombifiedPiglin)) {
         soulmetalSwordHit(sourceEntity, targetEntity);
       } else if (sourceItem instanceof BloodthirsterItem && targetEntity.getHealth() > 0) {
@@ -127,12 +129,10 @@ public class EventListener {
     level.levelEvent(2001, blockPos, Block.getId(Blocks.CRYING_OBSIDIAN.defaultBlockState()));
   }
   
-  public static void maceStun(LivingEntity source, LivingEntity target, float damage, MaceItem maceItem) {
+  public static void maceStun(LivingEntity source, LivingEntity target, float damage, AttackHand aHand, MaceItem maceItem) {
     Level level = source.level();
-    float itemdamage = maceItem.getDamage() + 1;
     BlockPos pos = target.blockPosition();
-    
-    if (damage > (itemdamage*2)) {
+    if (aHand.combo().current() == aHand.combo().total()) {
       if (maceItem == ItemRegistry.WOODEN_CLUB.get()) {
         target.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, (int) (damage / 0.1125), 0, false, false));
         level.playSound(null, pos, SoundEvents.PLAYER_ATTACK_CRIT, SoundSource.PLAYERS, 1.5f, 0.1f);
