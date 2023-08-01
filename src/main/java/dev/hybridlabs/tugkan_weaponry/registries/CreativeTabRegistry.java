@@ -113,12 +113,4 @@ public class CreativeTabRegistry {
       event.accept(AURUMITE_BLOCK);
     }
   }
-  
-  private static void generateEnchantmentBookTypesAllLevels(CreativeModeTab.Output output, HolderLookup<Enchantment> enchantmentholder, Set<EnchantmentCategory> category, CreativeModeTab.TabVisibility tabVisibility) {
-    enchantmentholder.listElements().map(Holder::value)
-      .filter((enchantment) -> enchantment.allowedInCreativeTab(Items.ENCHANTED_BOOK, category))
-      .flatMap((enchantment) -> IntStream.rangeClosed(enchantment.getMinLevel(), enchantment.getMaxLevel())
-        .mapToObj((level) -> EnchantedBookItem.createForEnchantment(new EnchantmentInstance(enchantment, level))))
-      .forEach((item) -> output.accept(item, tabVisibility));
-  }
 }

@@ -18,11 +18,11 @@ public class ShulkerGauntletFistItem extends FistItem {
   public boolean hurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
     target.playSound(SoundEvents.SHULKER_HURT_CLOSED, 1.5f, 1.5f);
     
-    doLevitating(stack, target, attacker);
+    doLevitating(stack, target);
     return super.hurtEnemy(stack, target, attacker);
   }
   
-  private void doLevitating(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+  private void doLevitating(ItemStack stack, LivingEntity target) {
     int enchLevel = stack.getEnchantmentLevel(EnchantmentRegistry.LEVITATING.get());
     
     if (enchLevel > 0 && !target.hasEffect(MobEffects.LEVITATION)) {

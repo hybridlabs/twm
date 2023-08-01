@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "features": "tugkans_weaponry:nether_gold_ancient_debris",
+  "biomes": "#minecraft:is_nether",
+  "step": "underground_ores"
+}
