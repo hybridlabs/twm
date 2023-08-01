@@ -3,17 +3,16 @@
   "pools": [
     {
       "bonus_rolls": 0.0,
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
-        }
-      ],
-      "entries": [
-        {
+      "conditions": [{"condition": "minecraft:survives_explosion"}],
+      "entries": [{
           "type": "minecraft:item",
-          "name": "twm:bedrock"
-        }
-      ],
+          "name": "twm:bedrock_sample",
+          "functions": [{
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:ore_drops"
+            }]
+      }],
       "rolls": 1.0
     }
   ],
