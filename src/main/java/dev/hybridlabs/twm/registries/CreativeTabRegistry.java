@@ -90,6 +90,7 @@ public class CreativeTabRegistry {
       event.accept(STEEL_INGOT);
       event.accept(TITANITE_INGOT);
       event.accept(TITANITE_SCRAP);
+      event.accept(WEAPON_TEMPLATE);
     } else if (event.getTabKey().equals(CreativeModeTabs.NATURAL_BLOCKS)) {
       event.accept(STEEL_BLOCK);
       event.accept(BEDROCK);

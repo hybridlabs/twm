@@ -2,6 +2,9 @@ package dev.hybridlabs.twm.items.weapons.swords;
 
 import dev.hybridlabs.twm.items.weapons.GenericWeaponrySwordItem;
 import dev.hybridlabs.twm.registries.ItemRegistry;
+import net.bettercombat.api.AttackHand;
+import net.bettercombat.logic.PlayerAttackHelper;
+import net.bettercombat.logic.PlayerAttackProperties;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
@@ -10,6 +13,7 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.TooltipFlag;
@@ -27,7 +31,9 @@ public class GlassRapierItem extends GenericWeaponrySwordItem {
   
   @Override
   public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
-    if(!(pAttacker instanceof Player player && player.isCreative())) breakRapier(pStack, pAttacker);
+    if(!(pAttacker instanceof Player player && player.isCreative())) {
+      breakRapier(pStack, pAttacker);
+    }
     return super.hurtEnemy(pStack, pTarget, pAttacker);
   }
   

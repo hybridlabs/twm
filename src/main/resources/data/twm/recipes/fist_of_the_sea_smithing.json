@@ -10,6 +10,6 @@
     "item": "twm:fist_of_the_sea_fist"
   },
   "template": {
-    "item": "minecraft:netherite_upgrade_smithing_template"
+    "item": "twm:weapon_template"
   }
 }

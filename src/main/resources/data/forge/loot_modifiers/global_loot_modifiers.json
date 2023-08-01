@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "entries": [
+    "twm:weapon_template_in_village_armorer",
+    "twm:weapon_template_in_village_toolsmith",
+    "twm:weapon_template_in_village_weaponsmith"
+  ]
+}

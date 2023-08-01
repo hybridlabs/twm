@@ -1,11 +1,16 @@
 package dev.hybridlabs.twm.events;
 
+import dev.hybridlabs.twm.Main;
 import dev.hybridlabs.twm.items.weapons.MaceItem;
 import dev.hybridlabs.twm.items.weapons.swords.BloodthirsterItem;
 import dev.hybridlabs.twm.items.weapons.swords.SoulmetalSwordItem;
 import dev.hybridlabs.twm.registries.BlockRegistry;
 import dev.hybridlabs.twm.registries.ItemRegistry;
 import dev.hybridlabs.twm.registries.SoundRegistry;
+import net.bettercombat.api.AttackHand;
+import net.bettercombat.api.EntityPlayer_BetterCombat;
+import net.bettercombat.logic.PlayerAttackHelper;
+import net.bettercombat.logic.PlayerAttackProperties;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
@@ -74,8 +79,9 @@ public class EventListener {
     Entity tempSourceEntity = event.getSource().getEntity();
     Entity tempTargetEntity = event.getEntity();
     
-    if (tempSourceEntity instanceof LivingEntity sourceEntity && tempTargetEntity instanceof LivingEntity targetEntity) {
-      Item sourceItem = sourceEntity.getMainHandItem().getItem();
+    if (tempSourceEntity instanceof Player sourceEntity && tempTargetEntity instanceof LivingEntity targetEntity) {
+      AttackHand aHand = PlayerAttackHelper.getCurrentAttack(sourceEntity, ((PlayerAttackProperties)sourceEntity).getComboCount());
+      Item sourceItem = aHand.itemStack().getItem();
       if (sourceItem instanceof MaceItem maceItem) {
         maceStun(sourceEntity, targetEntity, event.getAmount(), maceItem);
       } else if (sourceItem instanceof SoulmetalSwordItem && (targetEntity instanceof AbstractPiglin || targetEntity instanceof ZombifiedPiglin)) {

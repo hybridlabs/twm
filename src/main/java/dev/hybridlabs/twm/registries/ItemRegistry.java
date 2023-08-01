@@ -21,6 +21,8 @@ import static dev.hybridlabs.twm.Main.MODID;
 public class ItemRegistry {
   public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
   
+  public static final RegistryObject<Item> WEAPON_TEMPLATE = ITEMS.register("weapon_template", () -> new Item(new Item.Properties()));
+  
   public static final RegistryObject<Item> AURUMITE_INGOT = ITEMS.register("aurumite_ingot", () -> new Item(new Item.Properties()));
   public static final RegistryObject<Item> AURUMITE_SCRAP = ITEMS.register("aurumite_scrap", () -> new Item(new Item.Properties()));
   public static final RegistryObject<Item> BEDROCK_SAMPLE = ITEMS.register("bedrock_sample", () -> new Item(new Item.Properties()));

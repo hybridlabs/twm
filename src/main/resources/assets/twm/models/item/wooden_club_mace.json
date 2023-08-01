@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "twm:item/wooden_mace",
-		"particle": "twm:item/wooden_mace"
+		"0": "twm:item/wooden_club",
+		"particle": "twm:item/wooden_club"
 	},
 	"elements": [
 		{

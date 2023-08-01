@@ -10,6 +10,6 @@
     "item": "twm:obsidian_edged_diamond_shovel"
   },
   "template": {
-    "item": "minecraft:netherite_upgrade_smithing_template"
+    "item": "twm:weapon_template"
   }
 }

@@ -18,6 +18,7 @@ public class Registry {
     WeaponryFistTiers.init();
     WeaponrySwordTiers.init();
     
+    LootModifierRegistry.init(modEventBus);
     EnchantmentRegistry.init(modEventBus);
     SoundRegistry.init(modEventBus);
   }
