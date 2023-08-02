@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "twm:copper_sword",
+    "twm:steel_sword",
+    "twm:gilded_netherite_sword",
+    "twm:brightsteel_sword"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "twm:copper_axe",
+    "twm:steel_axe",
+    "twm:obsidian_edged_diamond_axe",
+    "twm:gilded_netherite_axe",
+    "twm:brightsteel_axe",
+    "twm:aurum_axe"
+  ]
+}

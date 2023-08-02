@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "twm:copper_shovel",
+    "twm:steel_shovel",
+    "twm:obsidian_edged_diamond_shovel",
+    "twm:gilded_netherite_shovel",
+    "twm:brightsteel_shovel",
+    "twm:aurum_shovel"
+  ]
+}

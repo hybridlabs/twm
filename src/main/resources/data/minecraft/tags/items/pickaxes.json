@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "twm:copper_pickaxe",
+    "twm:steel_pickaxe",
+    "twm:obsidian_tipped_diamond_pickaxe",
+    "twm:gilded_netherite_pickaxe",
+    "twm:brightsteel_pickaxe",
+    "twm:aurum_pickaxe"
+  ]
+}
