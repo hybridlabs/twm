@@ -78,9 +78,10 @@ public class EventListener {
   public static void onLivingEntityHurt(LivingHurtEvent event) {
     Entity tempSourceEntity = event.getSource().getEntity();
     Entity tempTargetEntity = event.getEntity();
-    
     if (tempSourceEntity instanceof Player sourceEntity && tempTargetEntity instanceof LivingEntity targetEntity) {
       AttackHand aHand = PlayerAttackHelper.getCurrentAttack(sourceEntity, ((PlayerAttackProperties)sourceEntity).getComboCount());
+      if(aHand == null) return;
+      
       Item sourceItem = aHand.itemStack().getItem();
       // For debugging
       // Main.LOGGER.warn(aHand.attack() + "\n" + aHand.isOffHand() + "\n" + aHand.attributes() + "\n" + aHand.combo() + "\n" + aHand.upswingRate());
